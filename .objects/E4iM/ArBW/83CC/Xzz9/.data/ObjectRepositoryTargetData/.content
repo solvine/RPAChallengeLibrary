@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-hGE0qOUgkyWMRfDxvptYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="4e04f6f9-0e76-4278-83a7-c4a23af8a386" CvElementArea="869, 1489, 324, 77" CvType="InputBox" DesignTimeRectangle="882, 1437, 304, 129" DesignTimeScaleFactor="3" ElementType="InputBox" FullSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='INPUT' css-selector='input[ng-reflect-name=&amp;quot;labelCompanyName&amp;quot;]' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='INPUT' css-selector='input[ng-reflect-name=&amp;quot;labelCompanyName&amp;quot;]' /&gt;" Guid="be3b8726-2e5d-4ea9-9bca-82172ebaba06" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4e04f6f9-0e76-4278-83a7-c4a23af8a386" CvTextArea="879, 1389, 282, 42" CvTextArgument="Company Name" CvType="Text" DesignTimeRectangle="882, 1385, 279, 47" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='Company Name' tag='LABEL' check:innerText='Company Name' /&gt;" Guid="c09fc8c7-2c46-47e0-8fe4-2e017f2924a4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="440368d365d2f026abb96f6db9018731.png" xmlns="">0lnFUWpHkVEKk_axNwyX6kg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

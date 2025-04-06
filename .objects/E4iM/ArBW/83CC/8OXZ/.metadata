@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Container - Email",
+  "Type": "Element",
+  "TaxonomyType": "Container",
+  "Id": "8OXZ6pXdDEifJJoSV8QXkg",
+  "Reference": "7FTkG7Kvi06VYdJRuCJWBw/8OXZ6pXdDEifJJoSV8QXkg",
+  "ParentRef": "7FTkG7Kvi06VYdJRuCJWBw/83CCPlGnj0aOg3nKb0orsA",
+  "Created": "2025-04-06T10:40:34.1462071Z",
+  "Updated": "2025-04-06T10:47:04.7119579Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

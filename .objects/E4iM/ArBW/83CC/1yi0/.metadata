@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Input - Address",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "1yi0T30M7EyTh5tgsBFLIg",
+  "Reference": "7FTkG7Kvi06VYdJRuCJWBw/1yi0T30M7EyTh5tgsBFLIg",
+  "ParentRef": "7FTkG7Kvi06VYdJRuCJWBw/83CCPlGnj0aOg3nKb0orsA",
+  "Created": "2025-04-06T08:47:14.2291155Z",
+  "Updated": "2025-04-06T08:49:10.0989516Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
