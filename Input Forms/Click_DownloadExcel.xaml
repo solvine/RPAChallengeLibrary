@@ -85,25 +85,25 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Click_DownloadExcel" sap:VirtualizedContainerService.HintSize="1022,847" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Click_DownloadExcel" sap:VirtualizedContainerService.HintSize="1022,850" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,824" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="03e8f16f-cd3e-4a62-9f77-49a8a0070f62" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,827" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="03e8f16f-cd3e-4a62-9f77-49a8a0070f62" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,584" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,586" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Button - Download Excel'" sap:VirtualizedContainerService.HintSize="954,522" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="03e8f16f-cd3e-4a62-9f77-49a8a0070f62" Timeout="60" Version="V4">
+            <uix:NCheckState DisplayName="Check App State 'Button - Download Excel'" sap:VirtualizedContainerService.HintSize="954,524" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="03e8f16f-cd3e-4a62-9f77-49a8a0070f62" Timeout="60" Version="V4">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
