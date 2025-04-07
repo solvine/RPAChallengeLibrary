@@ -1,11 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Input_Data" this:Input_Data.FirstName="Giedre" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="FirstName" Type="InArgument(x:String)" />
-  </x:Members>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap2010:WorkflowViewState.IdRef>Input_Data_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="Click_DownloadExcel" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Click_DownloadExcel_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -41,7 +34,6 @@
       <x:String>System.Reflection</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.Security</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -91,75 +83,81 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Input_Data" sap:VirtualizedContainerService.HintSize="1022,910" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Click_DownloadExcel" sap:VirtualizedContainerService.HintSize="1022,847" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,887" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="c328879f-77c2-4c3f-abb1-aa56e4a48e15" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,824" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="03e8f16f-cd3e-4a62-9f77-49a8a0070f62" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,647" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,584" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Input - First Name'" sap:VirtualizedContainerService.HintSize="954,585" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c328879f-77c2-4c3f-abb1-aa56e4a48e15" Timeout="60" Version="V4">
+            <uix:NCheckState DisplayName="Check App State 'Button - Download Excel'" sap:VirtualizedContainerService.HintSize="954,522" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="03e8f16f-cd3e-4a62-9f77-49a8a0070f62" Timeout="60" Version="V4">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,343" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Input - First Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,281" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c328879f-77c2-4c3f-abb1-aa56e4a48e15" Text="[FirstName]" Version="V4">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="ZEl5ow_1i0OmYB2RQxfnBQ" DesignTimeRectangle="882, 681, 304, 129" DesignTimeScaleFactor="3" ElementType="InputBox" FullSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='INPUT' css-selector='input[ng-reflect-name=&amp;apos;labelFirstName&amp;apos;]' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='INPUT' css-selector='input[ng-reflect-name=&amp;apos;labelFirstName&amp;apos;]' /&gt;" Guid="9243a1b0-a6ac-4310-993c-3beb9a64b84d" InformativeScreenshot="2597635c4b85c57e7c510d0ba0ba2440.png" IsResponsive="True" Reference="7FTkG7Kvi06VYdJRuCJWBw/SIgLROZsTkaz6qeRGfNUDg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button - Download Excel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="03e8f16f-cd3e-4a62-9f77-49a8a0070f62" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="rpachallenge.com" CVScreenId="5afe5c4b-716e-4e56-a162-38dccd1175f5" ContentHash="fLE8iK4x9Ui2o8QCCTS4uQ" CvElementArea="16, 891, 617, 39" CvType="Button" DesignTimeRectangle="19, 893, 614, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*Download Excel*' tag='A' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='*Download Excel*' tag='A' check:innerText='DOWNLOAD EXCEL*' /&gt;" Guid="a37d60d4-67e5-4932-9afd-e14a19d0e109" InformativeScreenshot="8ec869cd94040ceef9055b2a186fe1d2.png" Reference="7FTkG7Kvi06VYdJRuCJWBw/82174-SR5EeA_OsYbzPN9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target DesignTimeRectangle="882, 629, 178, 47" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='First Name' check:text='First Name' /&gt;" Guid="09b3d8ee-26ce-426d-b9a0-1265b92eb468" SearchSteps="FuzzySelector" />
+                            <uix:Target CVScreenId="5afe5c4b-716e-4e56-a162-38dccd1175f5" CvElementArea="17, 936, 617, 58" CvTextArea="301, 957, 49, 14" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 938, 614, 54" ElementType="Button" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Start' check:innerText='START' /&gt;" Guid="181e1015-0990-4d25-9254-904a9244ad85" SearchSteps="FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                    <uix:NTypeInto.VerifyOptions>
-                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Element 'Save As'" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
                           <InArgument x:TypeArguments="x:Boolean" />
-                        </uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable CVScreenId="37bb2a10-e00b-4847-b1d9-b68398b309a0" ContentHash="TklaCo14qEKRumLK9BVG7g" CvElementArea="136, 325, 490, 25" CvType="InputBox" DesignTimeRectangle="136, 329, 471, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="b577835c-2a55-4ea8-93a0-25be951124ef" InformativeScreenshot="4e5d0f9b21ec55358bf486d713f7dd8c.png" IsResponsive="True" Reference="7FTkG7Kvi06VYdJRuCJWBw/MZu76GchIUaaZUtPCxQQOA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="37bb2a10-e00b-4847-b1d9-b68398b309a0" CvTextArea="73, 331, 55, 12" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="18, 326, 115, 23" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' check:text='File name:' /&gt;" Guid="06ea3eea-338e-442c-b1c0-6c87a7627f0a" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
                           <InArgument x:TypeArguments="x:Double" />
-                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      </uix:VerifyExecutionTypeIntoOptions>
-                    </uix:NTypeInto.VerifyOptions>
-                  </uix:NTypeInto>
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,178" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Throw DisplayName="Throw: RPA Challenge: Input - First Name was not found" Exception="[new SystemException (&quot;RPA Challenge: Input - First Name was not found&quot;)]" sap:VirtualizedContainerService.HintSize="416,116" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                  <Throw DisplayName="Throw: RPA Challenge: Button - Download Excel was not found" Exception="[new SystemException(&quot;RPA Challenge: Button - Download Excel was not found&quot;)]" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="ZEl5ow_1i0OmYB2RQxfnBQ" DesignTimeRectangle="882, 681, 304, 129" DesignTimeScaleFactor="3" ElementType="InputBox" FullSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='INPUT' css-selector='input[ng-reflect-name=&amp;apos;labelFirstName&amp;apos;]' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;&lt;webctrl tag='INPUT' css-selector='input[ng-reflect-name=&amp;apos;labelFirstName&amp;apos;]' /&gt;" Guid="9243a1b0-a6ac-4310-993c-3beb9a64b84d" InformativeScreenshot="2597635c4b85c57e7c510d0ba0ba2440.png" IsResponsive="True" Reference="7FTkG7Kvi06VYdJRuCJWBw/SIgLROZsTkaz6qeRGfNUDg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                <uix:TargetAnchorable BrowserURL="rpachallenge.com" CVScreenId="5afe5c4b-716e-4e56-a162-38dccd1175f5" ContentHash="fLE8iK4x9Ui2o8QCCTS4uQ" CvElementArea="16, 891, 617, 39" CvType="Button" DesignTimeRectangle="19, 893, 614, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*Download Excel*' tag='A' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='*Download Excel*' tag='A' check:innerText='DOWNLOAD EXCEL*' /&gt;" Guid="a37d60d4-67e5-4932-9afd-e14a19d0e109" InformativeScreenshot="8ec869cd94040ceef9055b2a186fe1d2.png" Reference="7FTkG7Kvi06VYdJRuCJWBw/82174-SR5EeA_OsYbzPN9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="882, 629, 178, 47" ElementType="Text" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='First Name' check:text='First Name' /&gt;" Guid="09b3d8ee-26ce-426d-b9a0-1265b92eb468" SearchSteps="FuzzySelector" />
+                      <uix:Target CVScreenId="5afe5c4b-716e-4e56-a162-38dccd1175f5" CvElementArea="17, 936, 617, 58" CvTextArea="301, 957, 49, 14" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 938, 614, 54" ElementType="Button" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Start' check:innerText='START' /&gt;" Guid="181e1015-0990-4d25-9254-904a9244ad85" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
